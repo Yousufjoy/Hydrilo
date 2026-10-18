@@ -4,6 +4,7 @@ import { Platform } from 'react-native';
 // newer native modules like ExpoTopicSubscriptionModule are not bundled.
 let Notifications: typeof import('expo-notifications') | null = null;
 try {
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
   Notifications = require('expo-notifications');
   Notifications?.setNotificationHandler({
     handleNotification: async () => ({

@@ -116,6 +116,7 @@ export const MascotInteractive: React.FC<MascotInteractiveProps> = ({
       -1,
       true
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reducedMotion]);
 
   // Drink-logging reaction
@@ -154,6 +155,7 @@ export const MascotInteractive: React.FC<MascotInteractiveProps> = ({
       'Keep it flowing! 🌟',
     ];
     showSpeechBubble(compliments[Math.floor(Math.random() * compliments.length)]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [reactionTrigger, reducedMotion]);
 
   // Touch Haptic Helper
